@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.app {
+  padding: 20px;
+}
+
+.main-content {
+  transition: margin-right 0.3s ease;
+}
+
+.main-content.shifted {
+  margin-right: 320px;
+}
