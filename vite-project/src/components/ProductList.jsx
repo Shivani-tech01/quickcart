@@ -1,14 +1,17 @@
-import products from "../data/products"
-import ProductCard from "./productCard"
-
-function ProductList(){
- return(
-  <div>
-   {products.map((p)=>(
-     <ProductCard key={p.id} product={p}/>
-   ))}
-  </div>
- )
+import ProductCard from "./ProductCard";
+import "../styles/ProductList.css";
+function ProductList({ products, onAddToCart }) {
+  return (
+    <div className="product-grid">
+      {products.map((product) => (
+        <ProductCard
+          key={product.id}
+          product={product}
+          onAddToCart={onAddToCart}
+        />
+      ))}
+    </div>
+  );
 }
 
-export default ProductList
+export default ProductList;
