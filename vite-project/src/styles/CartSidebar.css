@@ -1,0 +1,44 @@
+.cart-sidebar{
+position:fixed;
+top:0;
+right:-350px;
+width:350px;
+height:100%;
+background:white;
+box-shadow:-5px 0 15px rgba(0,0,0,0.1);
+padding:20px;
+transition:0.3s;
+overflow-y:auto;
+}
+
+.cart-sidebar.open{
+right:0;
+}
+
+.cart-item{
+display:flex;
+gap:10px;
+margin-bottom:15px;
+}
+
+.cart-item img{
+width:60px;
+height:60px;
+object-fit:cover;
+}
+
+.quantity button{
+margin:0 5px;
+}
+
+.remove{
+background:red;
+color:white;
+border:none;
+padding:5px;
+margin-top:5px;
+}
+
+.total{
+margin-top:20px;
+}
